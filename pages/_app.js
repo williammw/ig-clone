@@ -1,5 +1,5 @@
 // import 'tailwindcss/tailwind.css'
-
+import Head from 'next/head'
 // entry pt for custom class
 import '../styles/global.css'
 import { SessionProvider } from "next-auth/react"
@@ -17,11 +17,16 @@ import {
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
+    <>
+      <Head>
+        <meta name="viewport" content="viewport-fit=cover" />
+      </Head>
     <SessionProvider session={session}>
       <RecoilRoot >
         <Component {...pageProps} />
       </RecoilRoot>
     </SessionProvider>
+    </>
   )
 }
 
