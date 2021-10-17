@@ -19,7 +19,7 @@ function Header() {
 // console.log(session)
   return (
     // trick for sticky top nav
-    <div className="shadow-sm border-b bg-white top-0">
+    <div className="sticky shadow-sm border-b bg-white top-0 z-100">
       {/* mx5 xl:mx-auto do the center trick */}
       <div className="flex justify-between max-w-6xl mx-5 xl:mx-auto">
         {/* Left */}
