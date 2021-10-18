@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import {SearchIcon, PlusCircleIcon, UserGroupIcon, HeartIcon, PaperAirplaneIcon, MenuIcon } from '@heroicons/react/outline';
+import {SearchIcon, PlusCircleIcon, UserGroupIcon, HeartIcon, PaperAirplaneIcon, MenuIcon, ScaleIcon } from '@heroicons/react/outline';
 import {HomeIcon} from  '@heroicons/react/solid';
 import  {signIn, signOut, useSession} from 'next-auth/react';
 import { useRouter } from 'next/dist/client/router';
@@ -29,6 +29,7 @@ function Header() {
             layout="fill"
             objectFit="contain"
           />
+          {/* <ScaleIcon  className="h-14 w-14 text-gray-500" /> */}
         </div>
         <div onClick={() => router.push('/')} className="relative w-10  lg:hidden flex-shrink-0 cursor-pointer">
           <Image
