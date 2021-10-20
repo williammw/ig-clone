@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import {SearchIcon, PlusCircleIcon, UserGroupIcon, HeartIcon, PaperAirplaneIcon, MenuIcon, ScaleIcon } from '@heroicons/react/outline';
+import {SearchIcon, PlusCircleIcon, UserGroupIcon, HeartIcon, PaperAirplaneIcon, MenuIcon, ScaleIcon, PencilAltIcon } from '@heroicons/react/outline';
 import {HomeIcon} from  '@heroicons/react/solid';
 import  {signIn, signOut, useSession} from 'next-auth/react';
 import { useRouter } from 'next/dist/client/router';
@@ -15,7 +15,10 @@ function Header() {
   const router = useRouter();
   const [open, setOpen] = useRecoilState(modalState) 
   
-
+  const createPost = (e) => {
+    e.preventDefault();
+    router.push('/createPost')
+  }
 // console.log(session)
   return (
     // trick for sticky top nav
@@ -64,6 +67,7 @@ function Header() {
 
         
         <PlusCircleIcon onClick={() => setOpen(true)} className='navBtn'/>
+        <PencilAltIcon onClick={createPost} className='navBtn' />
         <UserGroupIcon className='navBtn' />
         <HeartIcon className='navBtn' />
 
