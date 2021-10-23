@@ -32,7 +32,8 @@ function Header() {
             layout="fill"
             objectFit="contain"
           /> */}
-          <ScaleIcon  className="h-14 w-14 text-gray-500" />
+          <ScaleIcon  className="h-14 w-14 text-gray-500" /> 
+          <h3>THIS IS NOT IG!! zero relation to instgram, I BUILT THIS FOR TRAINGIN MY SKLL ONLY</h3>
         </div>
         <div onClick={() => router.push('/')} className="relative w-10  lg:hidden flex-shrink-0 cursor-pointer">
           <Image
