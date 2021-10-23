@@ -7,8 +7,8 @@ export default function SignIn({ providers }) {
     <>
     <Header />
     <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center">
-      <img className="w-80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2880px-Instagram_logo.svg.png" alt="" />
-      {/* <ScaleIcon  className="h-14 w-14 text-gray-500" /> */}
+      {/* <img className="w-80" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2880px-Instagram_logo.svg.png" alt="" /> */}
+      <ScaleIcon  className="h-14 w-14 text-gray-500" />
       <p className='font-xs italic'>this is not a real app, built for edu purpose only</p>
       <div className="mt-40">
       {Object.values(providers).map((provider) => (

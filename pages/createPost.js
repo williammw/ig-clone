@@ -135,7 +135,6 @@ function createPost() {
                       <li>&middot;</li>
                       <li>{post.shareCount} shares</li>
                     </ul>
-
                     <a
                       href="#"
                       className={classNames(
