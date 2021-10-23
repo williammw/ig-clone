@@ -33,8 +33,9 @@ function Header() {
             objectFit="contain"
           /> */}
           <ScaleIcon  className="h-14 w-14 text-gray-500" /> 
-          <h3>THIS IS NOT IG!! zero relation to instgram, I BUILT THIS FOR TRAINGIN MY SKLL ONLY</h3>
+          
         </div>
+        <h3 className="flex justify-between max-w-6xl mx-5 xl:mx-auto">THIS IS NOT IG!! zero relation to instgram, I BUILT THIS FOR TRAINGIN MY SKLL ONLY</h3>
         <div onClick={() => router.push('/')} className="relative w-10  lg:hidden flex-shrink-0 cursor-pointer">
           <Image
             src="https://1000logos.net/wp-content/uploads/2017/02/insta-logo.png"

@@ -12,7 +12,7 @@ function Story({username, img}) {
         // transform duration-200 ease-out
       }
         <img className=' h-14 w-14 rounded-full 
-        p-[1.5px] border-red-500 border-2
+        p-[1.5px] border-yellow-500 border-2
         object-contain cursor-pointer 
         ' src={img} alt="" />
       {/* truncate text  */}
