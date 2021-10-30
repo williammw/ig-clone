@@ -27,15 +27,15 @@ function Header() {
       <div className="flex justify-between max-w-6xl mx-5 xl:mx-auto">
         {/* Left */}
         <div onClick={() => router.push('/')} className="relative hidden lg:inline-grid  w-24 cursor-pointer">
-          {/* <Image
+          <Image
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2880px-Instagram_logo.svg.png"
             layout="fill"
             objectFit="contain"
-          /> */}
-          <ScaleIcon  className="h-14 w-14 text-gray-500" /> 
+          />
+          {/* <ScaleIcon  className="h-14 w-14 text-gray-500" />  */}
           
         </div>
-        <h3 className="flex justify-between max-w-6xl mx-5 xl:mx-auto">THIS IS NOT IG!! zero relation to instgram, I BUILT THIS FOR TRAINGIN MY SKLL ONLY</h3>
+        <h3 className="flex justify-between max-w-6xl mx-5 xl:mx-auto">THIS IS NOT IG!!</h3>
         <div onClick={() => router.push('/')} className="relative w-10  lg:hidden flex-shrink-0 cursor-pointer">
           <Image
             src="https://1000logos.net/wp-content/uploads/2017/02/insta-logo.png"
@@ -74,10 +74,10 @@ function Header() {
         <HeartIcon className='navBtn' />
 
         <img 
-        onClick={signOut}
-        src={session?.user?.image} 
-        alt="profile pic"
-        className="h-10 w-10 rounded-full cursor-pointer"
+          onClick={signOut}
+          src={session?.user?.image} 
+          alt="profile pic"
+          className="h-10 w-10 rounded-full cursor-pointer"
         />
         </>
         ):(
